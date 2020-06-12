@@ -1,0 +1,57 @@
+
+/* 这个页面用来定义样式 */
+
+.dbl_select{
+    border: 1px solid #aaa;
+    position: relative;
+    width: 600px;
+    margin: 50px auto;
+    padding: 7px 10px;
+    /* overflow: hidden; */  /* 强制父容器包裹浮动的子容器 */
+}
+
+.dbl_select .select{
+    width: 40%;
+    height: 200px;
+}
+
+.dbl_select .center_select{
+    border: 1px solid #aaa;
+    width:30px;
+    margin: 0 10px;
+    height: 200px;
+}
+
+.dbl_select div.center_select .center_select_inner{
+    margin-top: 50px;
+}
+
+.dbl_select .center_select span {
+    display: block;
+    font-size: 12px;
+    border: 1px solid #aaa;
+    width: 22px;
+    text-align: center;
+    margin: 6px auto;  /* 块级元素水平居中 */
+    border-radius: 2px;
+}
+
+.floatLeft{
+    float: left;
+}
+
+.clear{
+    clear: both;
+}
+
+/* 清理浮动，这样可以让父元素包裹浮动的元素。*/
+/* 在父元素上使用 overflow: hidden; 强制父元素包裹浮动子元素也是可以实现的 */
+/* 二种方案都可以 */
+.clearfix:after{
+    content:".";
+    display:block;
+    height:0;
+    visibility:hidden;
+    clear:both;
+}
+
